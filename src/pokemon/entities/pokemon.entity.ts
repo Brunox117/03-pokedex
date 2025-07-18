@@ -3,13 +3,12 @@ import { Document } from 'mongoose';
 
 @Schema()
 export class Pokemon extends Document {
-  // id lo generea mongo
+  // id lo genera mongo
   @Prop({
     unique: true,
     index: true,
   })
   name: string;
-  
   @Prop({
     unique: true,
     index: true,
